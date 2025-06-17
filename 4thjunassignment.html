@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Form Layout</title>
+  <style>
+    body {
+      background-color: lightgreen;
+      font-family: Arial;
+    }
+    h2 {
+      text-align: center;
+      color: red;
+      text-shadow: 1px 1px black;
+    }
+    form {
+      width: 500px;
+      margin: auto;
+      background-color: #c8e6c9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    label {
+      display: inline-block;
+      width: 100px;
+      margin: 10px 0;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 60%;
+      padding: 5px;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    textarea {
+      width: 95%;
+      height: 80px;
+    }
+    .center {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .group {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>Personal Details</h2>
+    
+    <div class="group"><label>Name:</label> <input type="text" /></div>
+    <div class="group"><label>Password:</label> <input type="password" /></div>
+    <div class="group"><label>E-mail id:</label> <input type="email" /></div>
+    <div class="group">
+      <label>Gender:</label> 
+      <input type="radio" name="gender" /> Male 
+      <input type="radio" name="gender" /> Female
+    </div>
+    <div class="group"><label>Contact#:</label> <input type="text" /></div>
+
+    <h2>Educational Qualification</h2>
+    <div class="group"><label>Degree:</label> 
+      <select><option>-- Select Group --</option></select>
+    </div>
+    <div class="group"><label>Engineering:</label> 
+      <select><option>-- Select Group --</option></select>
+    </div>
+    <div class="group">
+      <label>Hobbies:</label>
+      <input type="checkbox" /> Playing chess 
+      <input type="checkbox" /> Reading Books
+    </div>
+
+    <h2>Address</h2>
+    <div class="group"><textarea></textarea></div>
+
+    <div class="group"><label>Attach Resume:</label> <input type="file" /></div>
+
+    <div class="center">
+      <input type="submit" value="SUBMIT" />
+    </div>
+  </form>
+
+</body>
+</html>

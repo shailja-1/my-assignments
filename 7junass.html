@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Web Layout</title>
+  <style>
+    /* Task 1: Header */
+    .main-header {
+      width: 100%;
+      height: 100px;
+      background-color: teal;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 3px solid darkcyan;
+    }
+
+    /* Task 2: Content Box */
+    .content-box {
+      width: 400px;
+      height: 200px;
+      background-color: lightgray;
+      border: 2px dashed black;
+      color: #333;
+      padding: 20px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    /* Task 3: Profile Card */
+    .profile-card {
+      width: 300px;
+      height: 350px;
+      background-image: url('https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px solid #333;
+      border-radius: 10px;
+      margin: 20px auto;
+      color: white;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 15px;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    /* Task 4: Footer */
+    .main-footer {
+      width: 100%;
+      height: 80px;
+      background: linear-gradient(to right, #4b6cb7, #182848);
+      border-top: 3px solid #000;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    /* Task 5: Notification Box */
+    .notification-box {
+      width: 250px;
+      height: 100px;
+      background-color: #fff3cd;
+      border-left: 5px solid #ffc107;
+      color: #856404;
+      padding: 15px;
+      margin: 20px auto;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Task 1: Header -->
+  <div class="main-header">
+    <h1>Welcome to My Styled Page</h1>
+  </div>
+
+  <!-- Task 2: Content Box -->
+  <div class="content-box">
+    <p>This is a content box styled with dashed borders and centered text. You can put any content here.</p>
+  </div>
+
+  <!-- Task 3: Profile Card -->
+  <div class="profile-card">
+    <h2>John Doe</h2>
+  </div>
+
+  <!-- Task 5: Notification Box -->
+  <div class="notification-box">
+    <strong>Note:</strong> This is a notification box to show alerts or messages.
+  </div>
+
+  <!-- Task 4: Footer -->
+  <div class="main-footer">
+    <p>© 2025 My Styled Page. All rights reserved.</p>
+  </div>
+
+</body>
+</html>

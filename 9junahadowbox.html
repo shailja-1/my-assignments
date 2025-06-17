@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eight Box Shadows Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      gap: 40px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      margin: auto;
+    }
+
+    /* Box 1 - layered shadows with offset */
+    .shadow1 {
+      box-shadow: 
+        2px 2px 0px blue,
+        4px 4px 0px green,
+        6px 6px 0px yellow,
+        8px 8px 0px orange,
+        10px 10px 0px red;
+    }
+
+    /* Box 2 - stacked shadows with no offset */
+    .shadow2 {
+      box-shadow: 
+        0 0 0 2px blue,
+        0 0 0 4px green,
+        0 0 0 6px yellow,
+        0 0 0 8px orange,
+        0 0 0 10px red;
+    }
+
+    /* Remaining 6 boxes - subtle grey shadows */
+    .shadow-light {
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <p style="text-align: right;">6/10/25, 4:12 PM</p>
+  <h2>Eight Box Shadows Example</h2>
+
+  <div class="container">
+    <div class="box shadow1"></div>
+    <div class="box shadow2"></div>
+    <div class="box shadow-light"></div>
+    <div class="box shadow-light"></div>
+    <div class="box shadow-light"></div>
+    <div class="box shadow-light"></div>
+    <div class="box shadow-light"></div>
+    <div class="box shadow-light"></div>
+  </div>
+
+</body>
+</html>

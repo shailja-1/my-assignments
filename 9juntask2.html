@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #007bff;
+      object-fit: cover;
+    }
+    .card h2 {
+      margin: 15px 0 5px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .card p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #555;
+    }
+    .follow-btn {
+      margin-top: 15px;
+      padding: 8px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://i.ibb.co/4Zz2sWT/person.jpg" alt="Profile Photo" />
+    <h2>JOHN DOE</h2>
+    <p>Frontend Developer</p>
+    <p>Loves coding & coffee ☕</p>
+    <button class="follow-btn">Follow</button>
+  </div>
+</body>
+</html> 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h{height: 1000px;}
+        .box{width: 100px;height:100px;border: 1px solid;}
+        .abs{ position: absolute;bottom:0px;right:0px;}
+        .rel{
+            position: reltive;left:50px;bottom:50px;
+        }
+        .fix{
+            position: fixed;top:  calc(50% - 50%);left: calc(50% - 50%);
+        }
+        .sticky{
+            position: sticky;top:10px;
+        }
+        </style>
+</head>
+<body>
+    <div class="abd box">absolute</div>
+    <div class="rel box">relative</div>
+    <div class="fix box">fixed</div>
+    <div class="sticky box">sticky</div>
+    <div class="h"></div>
+</body>
+</html>
