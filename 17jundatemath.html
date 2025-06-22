@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Tasks</title>
+</head>
+<body>
+  <h2>DOM Output:</h2>
+  <div id="dateTime"></div>
+  <div id="year"></div>
+  <div id="daysLeft"></div>
+  <div id="welcome"></div>
+  <p id="helloText"></p>
+  <div id="boldHTML"></div>
+  <div id="listContainer"></div>
+
+  <script>
+    // MATH QUESTIONS
+
+    // 1. Random number between 1 and 100
+    function getRandom() {
+      return Math.floor(Math.random() * 100) + 1;
+    }
+    console.log("Random Number (1-100):", getRandom());
+
+    // 2. Square root of a number
+    function getSqrt(num) {
+      return Math.sqrt(num);
+    }
+    console.log("Square Root of 25:", getSqrt(25));
+
+    // 3. Round down, up, nearest
+    let num = 4.7;
+    console.log("Original:", num);
+    console.log("Math.floor:", Math.floor(num));
+    console.log("Math.ceil:", Math.ceil(num));
+    console.log("Math.round:", Math.round(num));
+
+    // DATE QUESTIONS
+    window.onload = function() {
+      // 1. Display current date and time
+      const now = new Date();
+      document.getElementById("dateTime").innerText = "Current Date & Time: " + now;
+
+      // 2. Show only current year
+      const year = now.getFullYear();
+      document.getElementById("year").innerText = "Current Year: " + year;
+
+      // 3. Days left until Dec 31
+      function daysLeftInYear() {
+        const end = new Date(year, 11, 31); // Dec 31
+        const diff = end - now;
+        const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+        return daysLeft;
+      }
+      document.getElementById("daysLeft").innerText = "Days left in the year: " + daysLeftInYear();
+
+      // TIMERS
+
+      // 1. Countdown 5 to 1 in console
+      let count = 5;
+      const interval = setInterval(() => {
+        if (count > 0) {
+          console.log("Countdown:", count--);
+        } else {
+          console.log("Time’s up!");
+          clearInterval(interval);
+        }
+      }, 1000);
+
+      // 2. Delayed welcome message
+      setTimeout(() => {
+        document.getElementById("welcome").innerText = "👋 Welcome!";
+      }, 2000);
+
+      // DOM PRACTICAL
+
+      // 1. Hello World using innerText
+      document.getElementById("helloText").innerText = "Hello World";
+
+      // 2. Bold HTML using innerHTML
+      document.getElementById("boldHTML").innerHTML = "<b>JavaScript is Fun</b>";
+
+      // 3. Inject List from Array
+      const items = ["HTML", "CSS", "JS"];
+      const listHTML = "<ul>" + items.map(item => `<li>${item}</li>`).join('') + "</ul>";
+      document.getElementById("listContainer").innerHTML = listHTML;
+    };
+  </script>
+</body>
+</html>
